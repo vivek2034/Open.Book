@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Story Reader</title>
+    <meta name="robots" content="noindex,follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/story.css" />
+  </head>
+  <body>
+    <div class="bg-orb bg-orb-a"></div>
+    <div class="bg-orb bg-orb-b"></div>
+
+    <main class="reader-shell">
+      <a class="back-link" href="/">Back to feed</a>
+
+      <article class="reader-panel">
+        <header class="reader-hero">
+          <div class="reader-meta-row">
+            <span class="eyebrow" id="storyCategory">Loading</span>
+            <span class="reader-meta" id="storyDate">Preparing story...</span>
+          </div>
+          <h1 id="storyTitle">Loading story...</h1>
+          <p class="reader-prompt" id="storyPrompt"></p>
+          <div class="reader-meta-row">
+            <span class="reader-stat" id="storyWordCount"></span>
+          </div>
+        </header>
+
+        <section class="reader-content" id="storyContent">
+          <p>Loading the full reading experience...</p>
+        </section>
+      </article>
+    </main>
+
+    <script src="/story.js" type="module"></script>
+  </body>
+  </html>

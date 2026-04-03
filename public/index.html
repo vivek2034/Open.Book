@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StoryForge | AI Story Generator, Public Novel Feed, Fantasy, Romance & Horror Stories</title>
+    <meta
+      name="description"
+      content="Create and read AI-generated fantasy, romance, horror, dark romance, and dramatic stories in a public feed built for readers searching fresh fiction."
+    />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+    <meta
+      name="keywords"
+      content="AI story generator, AI novel generator, fantasy stories, romance stories, horror stories, dark romance stories, free online stories"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="StoryForge" />
+    <meta
+      property="og:title"
+      content="StoryForge | AI Story Generator and Public Story Feed"
+    />
+    <meta
+      property="og:description"
+      content="Generate original AI-powered stories and discover a public feed of fantasy, romance, horror, and dark fiction."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="StoryForge | AI Story Generator and Public Story Feed"
+    />
+    <meta
+      name="twitter:description"
+      content="Generate original AI stories and read a public feed of fantasy, romance, horror, and dark fiction."
+    />
+    <meta name="theme-color" content="#0f1117" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "StoryForge",
+        "description": "AI story generator and public story feed for fantasy, horror, romance, and dark fiction readers.",
+        "inLanguage": "en"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bg-orb bg-orb-a"></div>
+    <div class="bg-orb bg-orb-b"></div>
+
+    <main class="page-shell">
+      <section class="hero reveal">
+        <div class="hero-copy">
+          <span class="eyebrow">Public AI Story Feed</span>
+          <h1>Generate haunting, romantic, and fantastical novels in one living feed.</h1>
+          <p>
+            Anyone can create a story, and every generated piece is saved to the global
+            collection for the next reader to discover.
+          </p>
+        </div>
+
+        <div class="quota-card">
+          <p class="quota-label">Daily quota</p>
+          <div class="quota-value" id="quotaValue">5 / 5</div>
+          <p class="quota-subtext" id="quotaSubtext">Loading usage...</p>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <form class="panel form-panel reveal" id="storyForm">
+          <div class="panel-head">
+            <h2>Create a Story</h2>
+            <span class="pill">Gemini powered</span>
+          </div>
+
+          <label class="field">
+            <span>Category</span>
+            <select id="category" name="category" required></select>
+          </label>
+
+          <label class="field">
+            <span>Prompt</span>
+            <textarea
+              id="prompt"
+              name="prompt"
+              rows="7"
+              maxlength="1000"
+              placeholder="Describe the setting, characters, mood, twist, or themes you want..."
+              required
+            ></textarea>
+          </label>
+
+          <div class="form-footer">
+            <p id="statusMessage" class="status-message">Choose a category and begin writing.</p>
+            <button type="submit" id="generateButton">Generate Story</button>
+          </div>
+        </form>
+
+        <aside class="panel preview-panel reveal" id="latestStoryPanel">
+          <div class="panel-head">
+            <h2>Latest Generation</h2>
+            <span class="pill pill-soft" id="latestCategory">Waiting</span>
+          </div>
+          <h3 id="latestTitle">Your next story will appear here.</h3>
+          <p id="latestExcerpt" class="preview-copy">
+            Once generated, the story is added to the public feed and highlighted here instantly.
+          </p>
+          <a class="reader-link reader-link-muted" id="latestStoryLink" href="/story.html">
+            Open focused reading page
+          </a>
+        </aside>
+      </section>
+
+      <section class="feed-section">
+        <div class="feed-header reveal">
+          <div>
+            <span class="eyebrow">Community feed</span>
+            <h2>Fresh stories from everyone</h2>
+            <p>
+              Explore newly generated fiction across fantasy, romance, horror, dark romance,
+              and lusty story categories.
+            </p>
+          </div>
+
+          <select id="feedCategoryFilter" class="feed-filter">
+            <option value="">All categories</option>
+          </select>
+        </div>
+
+        <div id="feedGrid" class="feed-grid"></div>
+      </section>
+    </main>
+
+    <template id="storyCardTemplate">
+      <article class="story-card reveal-card">
+        <div class="story-card-top">
+          <span class="story-category"></span>
+          <span class="story-date"></span>
+        </div>
+        <h3 class="story-title"></h3>
+        <p class="story-excerpt"></p>
+        <div class="story-meta"></div>
+        <a class="reader-link story-read-link" href="/story.html">Read full story</a>
+      </article>
+    </template>
+
+    <script src="/app.js" type="module"></script>
+    <noscript>
+      StoryForge works best with JavaScript enabled so readers can browse the live public story
+      feed and generate new stories.
+    </noscript>
+  </body>
+  </html>
