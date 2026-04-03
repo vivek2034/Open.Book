@@ -1,0 +1,27 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F1117"/>
+  <circle cx="187" cy="120" r="190" fill="#A83B32" fill-opacity="0.22"/>
+  <circle cx="1016" cy="530" r="230" fill="#D38A44" fill-opacity="0.18"/>
+  <rect x="72" y="68" width="1056" height="494" rx="34" fill="url(#paint0_linear_2_1)" fill-opacity="0.96"/>
+  <rect x="118" y="114" width="964" height="402" rx="28" fill="#171A22" fill-opacity="0.92" stroke="#F2E9DC" stroke-opacity="0.12" stroke-width="2"/>
+  <g opacity="0.98">
+    <rect x="164" y="156" width="188" height="188" rx="28" fill="#F7EFE3"/>
+    <path d="M194 181H320V319H194C182.954 319 174 310.046 174 299V201C174 189.954 182.954 181 194 181Z" fill="#FFF9F0" stroke="#1B1D25" stroke-width="8"/>
+    <path d="M244 210V290" stroke="#1B1D25" stroke-width="14" stroke-linecap="round"/>
+    <path d="M244 250H295" stroke="#1B1D25" stroke-width="14" stroke-linecap="round"/>
+    <path d="M266 210C273.43 203.691 283.044 200 293 200C315.091 200 333 217.909 333 240C333 262.091 315.091 280 293 280C283.044 280 273.43 276.309 266 270" stroke="#A83B32" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <text x="392" y="220" fill="#F7EFE3" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700">StoryForge</text>
+  <text x="394" y="286" fill="#D8CBB8" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="3.5">AI STORY GENERATOR AND PUBLIC STORY FEED</text>
+  <text x="394" y="370" fill="#FFF9F0" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700">Fantasy. Romance. Horror. Dark Fiction.</text>
+  <text x="394" y="425" fill="#D9D2C7" font-family="Arial, Helvetica, sans-serif" font-size="28">Generate original stories and discover a living public library.</text>
+  <rect x="394" y="465" width="276" height="58" rx="29" fill="#F7EFE3"/>
+  <text x="447" y="503" fill="#1B1D25" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Read. Create. Share.</text>
+  <defs>
+    <linearGradient id="paint0_linear_2_1" x1="120" y1="80" x2="1042" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#782A27"/>
+      <stop offset="0.5" stop-color="#3C2430"/>
+      <stop offset="1" stop-color="#C17A3B"/>
+    </linearGradient>
+  </defs>
+</svg>
