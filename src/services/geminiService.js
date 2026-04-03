@@ -20,7 +20,7 @@ Requirements:
 
 export const generateStoryWithGemini = async ({ category, prompt }) => {
   const apiKey = process.env.GEMINI_API_KEY;
-  const model = process.env.GEMINI_MODEL || "gemini-2.0-flash";
+  const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
   if (!apiKey) {
     throw new AppError("Missing GEMINI_API_KEY in environment variables.", 500);
