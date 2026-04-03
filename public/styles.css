@@ -81,6 +81,27 @@ body {
   margin-bottom: 28px;
 }
 
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.brand-mark-image {
+  width: 68px;
+  height: 68px;
+  display: block;
+}
+
+.brand-mark-text {
+  font-family: "Cinzel", serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+
 .eyebrow {
   display: inline-block;
   margin-bottom: 16px;
